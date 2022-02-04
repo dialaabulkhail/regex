@@ -16,7 +16,7 @@ function capitalA(s){
 which end with io (example@example.io) */
 
 function ioEmail(email){
-    let emailExample = /[a-z0-9]+@[a-z0-9]+.io/
+    let emailExample = /(^|\s)[a-z]+@[a-z]+.io/
     return emailExample.test(email);
 }
 
