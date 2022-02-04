@@ -11,12 +11,10 @@ function division(number, dividedBy){
             }
             }
   
-
 /* Write a function that implement Math.pow(x,n) but using recursion
 Example:
 pow(2,4) = 16
 */
-
 
 function pow(x,n){
     let result =1;
@@ -28,6 +26,7 @@ function pow(x,n){
         return result;
     
 }
+
 
 /* The Fibonacci Series is a numeric series starting with the integers 0 and 1. In this series,
 the next integer is determined by summing the previous two. This gives us:
