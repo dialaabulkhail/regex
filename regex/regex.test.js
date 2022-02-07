@@ -28,11 +28,10 @@ required extention are jpg, jpeg and png.
 
 
 function imagesSearcher(text){
-    let arr = /[a-z0-9]\.jpg|png|jpeg/
-     return arr.test(text);
+
+    let arr = /[\w\.\$]+(?=png|jpg|jpeg)\w+/g
+     return text.match(arr);
 }
-
-
 
 
 // describe("Test capitalA", ()=>{
