@@ -5,11 +5,17 @@ function division(number, dividedBy){
         if(number - dividedBy == 0){
           
             return 1;
-            } else{
+        } else if(number == 0){
+          return 0;
+        } else if(dividedBy == 0){
+          return ("unknown");
+        }
+             else{
               x++
              return x + division(number-dividedBy, dividedBy);
             }
-            }
+}
+         
   
 /* Write a function that implement Math.pow(x,n) but using recursion
 Example:
